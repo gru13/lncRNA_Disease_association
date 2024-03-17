@@ -1,0 +1,54 @@
+# import pandas as pd
+
+# def create_adjacency_matrix(df, source_col, target_col):
+#     """
+#     Create an adjacency matrix from a pandas DataFrame.
+    
+#     Args:
+#         df (pandas.DataFrame): The input DataFrame containing edge information.
+#         source_col (str): The name of the column representing the source nodes.
+#         target_col (str): The name of the column representing the target nodes.
+        
+#     Returns:
+#         pandas.DataFrame: The adjacency matrix represented as a pandas DataFrame.
+#     """
+#     # Get the unique nodes (vertices)
+#     rows = df[source_col].unique()
+#     cols = df[target_col].unique()
+#     # Create an adjacency matrix with all values initially set to 0
+#     adj_matrix = pd.DataFrame(0, index=rows, columns=cols)
+#     for a in cols:
+#         for b in rows:
+#             try :
+#                 adj_matrix[b][a] = 1
+#             except:
+#                 pass
+#     return adj_matrix
+
+# create_adjacency_matrix(df,source_col='lncRNA',target_col='miRNA')
+
+# import pandas as pd
+
+# def create_adjacency_matrix(df, source_col, target_col):
+#     """
+#     Create an adjacency matrix from a pandas DataFrame.
+    
+#     Args:
+#         df (pandas.DataFrame): The input DataFrame containing edge information.
+#         source_col (str): The name of the column representing the source nodes.
+#         target_col (str): The name of the column representing the target nodes.
+        
+#     Returns:
+#         pandas.DataFrame: The adjacency matrix represented as a pandas DataFrame.
+#     """
+#     # Get the unique nodes (vertices)
+#     rows = df[source_col].unique()
+#     cols = df[target_col].unique()
+#     # Create an adjacency matrix with all values initially set to 0
+#     adj_matrix = pd.DataFrame(0, index=rows, columns=cols)
+    
+#     # Fill in the adjacency matrix with 1 where there is an edge
+#     for i, row in df.iterrows():
+#         adj_matrix.loc[row[source_col], row[target_col]] = 1
+    
+#     return adj_matrix
