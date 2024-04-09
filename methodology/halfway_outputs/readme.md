@@ -1,1 +1,1 @@
-this contains half outputs
+If you run the code , half way outputs will be save here , majorly .npy files
