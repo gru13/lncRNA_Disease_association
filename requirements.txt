@@ -1,0 +1,5 @@
+# Required packages for your project
+pandas
+numpy
+networkx
+scikit-learn
