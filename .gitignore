@@ -1,2 +1,4 @@
 *.npy
 DMWNN_final_ouput.csv
+methodology/outputs/Latent_Normalized.csv
+methodology/outputs/Latent_Normalized.feather
