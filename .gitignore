@@ -1,5 +1,4 @@
 *.npy
 DMWNN_final_ouput.csv
-methodology/outputs/Latent_Normalized.csv
-methodology/outputs/Latent_Normalized.feather
-methodology/outputs/final_output/Latent_Normalized_ranking.csv
+methodology/outputs/*.csv
+methodology/outputs/final_output/Final-Dormant-Association.csv
